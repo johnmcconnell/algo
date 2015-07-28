@@ -90,7 +90,7 @@ func (t *ArrayHeap) L() int {
 	L := len(t.es)
 
 	// Finding Actual
-	for (L > 0) && t.es[L - 1] == AlmostInf {
+	for (L > 0) && t.es[L-1] == AlmostInf {
 		L--
 	}
 

@@ -1,8 +1,8 @@
 package lnklst
 
 import (
-	"testing"
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func TestAdd(t *testing.T) {

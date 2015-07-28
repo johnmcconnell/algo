@@ -13,7 +13,7 @@ type SingleLinkedList struct {
 }
 
 type Node struct {
-	next *Node
+	next    *Node
 	element interface{}
 }
 
@@ -24,7 +24,7 @@ func NewSingleLinkedList() *SingleLinkedList {
 
 func newNode(e interface{}) *Node {
 	n := Node{
-		next: nil,
+		next:    nil,
 		element: e,
 	}
 	return &n

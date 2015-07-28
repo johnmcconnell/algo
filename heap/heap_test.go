@@ -1,8 +1,8 @@
 package heap
 
 import (
-	"testing"
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func TestTreeHeap(t *testing.T) {
