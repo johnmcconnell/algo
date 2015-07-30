@@ -51,6 +51,7 @@ func PrioritizeUpRec(es []int, i int, e int) {
 		// for the parent element
 		es[i] = pE
 		es[pI] = e
+
 		// Move up to parent position
 		PrioritizeUpRec(es, pI, e)
 	}
