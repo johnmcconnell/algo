@@ -41,6 +41,9 @@ func singleBinarySearch(A, B int, CF CompareFunc) int {
 
 // Works for always increasing lists
 func SingleBinarySearch(L int, CF CompareFunc) int {
+	if L < 1 {
+		return -1
+	}
 	return singleBinarySearch(0, L-1, CF)
 }
 
@@ -51,6 +54,9 @@ func SingleBinarySearch(L int, CF CompareFunc) int {
 // list
 // The correct design is to add results inside the compare function
 func MultBinarySearch(L int, CF CompareFunc, SF StoreFunc) {
+	if L < 1 {
+		return
+	}
 	idx := singleBinarySearch(0, L-1, CF)
 
 	if idx < 0 {
